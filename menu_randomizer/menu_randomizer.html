@@ -1,0 +1,51 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="utf-8"></meta>
+		<title>What's For Dinner This Week?</title>
+		<link href="menu_randomizer.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="explanation">
+			<label>EXPLANATION:</label><hr />
+			What's for dinner this week? This is the question that guided this project's development. Built both to answer it and give folks looking for something different a new culinary challenge. Just click the Generate Menu button to get seven randomly selected recipes, one for each day.
+		</div>
+		<table>
+			<tr>
+				<td><button class="generateButton buttonLayout"><h3>GENERATE MENU</h3></button></td>
+				<td class="space"></td>
+				<td>
+					<div class="dayLayout">
+						Each Meal Serves 2 People
+					</div>
+					<div class="references">
+						Recipes Taken From Hello Fresh & Every Plate Meals
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td class="dayLayout">MONDAY</td>
+				<td class="dayLayout">TUESDAY</td>
+				<td class="dayLayout">WEDNESDAY</td>
+				<td class="dayLayout">THURSDAY</td>
+				<td class="dayLayout">FRIDAY</td>
+				<td class="dayLayout">SATURDAY</td>
+				<td class="dayLayout">SUNDAY</td>
+			</tr>
+			<tr>
+				<td class="recipeCard1 cardLayout"></td>
+				<td class="recipeCard2 cardLayout"></td>
+				<td class="recipeCard3 cardLayout"></td>
+				<td class="recipeCard4 cardLayout"></td>
+				<td class="recipeCard5 cardLayout"></td>
+				<td class="recipeCard6 cardLayout"></td>
+				<td class="recipeCard7 cardLayout"></td>
+			</tr>
+		</table>
+
+		<script src="menu_randomizer.js" />
+	</body>
+</html>

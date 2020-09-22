@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>EXP Counter</title>
+
+		<link href="exp_counter.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="expCounterLayout explanation">
+			<label>EXPLANATION:</label><br />
+			This website provides an easy way to track how long until party members level up in games that don't give a readily available way to view that information. Use the accompanying fields to add a new character to the party, remove current party members, directly alter the EXP value of a current party member, and decrease the EXP count of every party member. When you add a new character they'll appear in the YOUR PARTY section.
+			</div>
+		<div class="expCounterLayout"> 
+			<div class="newCharSection ">
+				<label>ADD NEW CHARACTER</label><hr />
+				NAME: <input class="newCharName" type="text"><br />
+				EXP: <input class="newCharEXP" type="number"><br />
+				<button class="newCharacter">ADD</button>
+			</div>
+			<div class="removeCharSection">
+				<label>REMOVE CHARACTER</label><br /><hr />
+				NAME: <input class="dataToRemove" type="text"><br />
+				<button class="removeCharacter">REMOVE</button>
+			</div>
+			<div class="editCharSection">
+				<label>ADJUST CHARACTER DATA</label><br /><hr />
+				NAME:<input class="adjustName" type="text"><br />
+				EXP:<input class="adjustExp" type="number"><br />
+				<button class="adjustBtn">CHANGE:</button>
+			</div>
+
+			<div class="reduceExpSection">
+				<label>REDUCE EXP:</label><hr />
+				<input class="reduceExpField" type="number">
+				<button class="reduceExpBtn">REDUCE</button>
+			</div>
+		</div>
+
+		<div class="charDataSection"><label>YOUR PARTY:</label><hr />
+			<div class="characterDataDisplay"></div>
+		</div>
+
+		<script src="exp_counter.js" />
+
+	</body>
+</html>

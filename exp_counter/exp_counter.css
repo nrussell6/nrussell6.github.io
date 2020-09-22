@@ -1,0 +1,54 @@
+.expCounterLayout{
+    display: grid;
+    border: solid black;
+    background-color: #b3ccff;  
+}
+
+.explanation{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+.newCharSection{
+    grid-column: 1;
+    grid-row: 2;
+    border-style: none solid solid none;
+    text-align: center;
+}
+
+.removeCharSection{
+    grid-column: 2;
+    grid-row: 2;
+    border-style: none solid solid none;
+    text-align: center;
+}
+
+.editCharSection{
+    grid-column: 3;
+    grid-row: 2;
+    border-style: none none solid none;
+    text-align: center;
+}
+
+.reduceExpSection{
+    grid-column: 2;
+    grid-row: 3;
+    text-align: center;
+}
+
+.charDataSection{
+    border-style: none solid solid solid;
+    background-color: #b3ccff; 
+}
+
+.characterDataDisplay{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+label{
+    /* font-size: large; */
+    font-weight: bolder;
+    font-style: italic;    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome To Tic-Tac-Toe!</title>
+
+
+		<link href="ticTacToeCSS.css" rel="stylesheet"><!-- Style Sheet -->
+	</head>
+	<body>
+
+		<!-- Workspace -->
+		<table>
+			<div class="explanation">
+				<label>EXPLANATION:</label><hr />
+				In this classic game each player chooses either X or O and take turns alternately placing their piece on each square of a 3 X 3 grid. When one player makes a line, either, horizontally, vertically, or diagonally, of just their pieces they win that round and score a point. Play continues until both parties are done playing, with the side that has the most point winning the game.<br /><br />
+				Press the checkbox beside either X or O in the toggle AI column in order to enable a single player game, with whichever one checked playing that particular game piece. Use the Board Reset button to clear the board. This button won't reset the score so press when you're ready for the next round.
+			</div>
+			<td><button class="resetButton">Board Reset!</button></td><!-- Resets the game board -->
+			<td class="emptySpace"></td>
+			<td class="currentTurnIndicator"></td>
+		</table>
+		<!-- Makes the game board-->
+		<div class="gameboard">
+			<table class="table">
+				<tr class="scoreboard">
+					<td><h1>SCORE:</h1></td>
+					<td class="xWin"><h1>X: 0</h1></td>
+					<td class="oWin"><h1>O: 0</h1></td>
+					<td><h1>Enable AI</h1></td>
+					
+					
+				</tr>
+				<tr>
+					<td class = "button1 space"> </td>
+					<td class = "button2 space"> </td>
+					<td class = "button3 space"> </td>
+					<td>
+						<h1>X: 
+							<input type="checkbox" class="xAI switch" value=false></input>
+						</h1>
+					</td>
+				</tr>
+				<tr>
+					<td class = "button4 space"></td>
+					<td class = "button5 space"></td>
+					<td class = "button6 space"></td>
+					<td>
+						<h1>O: 
+							<input type="checkbox" class="oAI switch"></input>
+						</h1>
+					</td>
+				</tr>
+				<tr>
+					<td class = "button7 space"></td>
+					<td class = "button8 space"></td>
+					<td class = "button9 space"></td>
+				</tr>
+			</table>
+		</div>
+
+		
+
+		<!-- Workspace End -->
+		<script src="tictacToeJS.js"></script><!-- JavaScript. Remains at bottom -->
+	</body>
+</html>

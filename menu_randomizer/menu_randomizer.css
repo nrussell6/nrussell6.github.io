@@ -1,0 +1,41 @@
+.buttonLayout{
+	padding: .8em;
+	background-color: #16B6B6;
+}
+.space{
+	width: 7em;
+}
+.cardLayout{
+	padding: .5em;
+	border: solid black;
+	vertical-align: text-top;
+	width: 14em;
+}
+.dayLayout{
+	text-align: center;
+	border: solid black;
+	font-size: x-large;
+	padding: .5em;
+	font-style: italic;
+	font-weight: bold;
+}
+.references{
+	text-align: center;
+	border: solid black;
+	font-size: large;
+	padding: .5em;
+	font-style: italic;
+}
+
+.explanation{
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border: solid black;
+}
+
+label{
+    font-weight: bolder;
+    font-style: italic;   
+}
