@@ -62,3 +62,9 @@ label{
 html{
     font-size: xx-large;
 }
+
+button{
+    font-size: xx-large;
+    padding-left: 1em;
+    padding-right: 1em;
+}
