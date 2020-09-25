@@ -1,6 +1,7 @@
 .buttonLayout{
 	padding: .8em;
 	background-color: #16B6B6;
+	font-size: x-large;
 }
 .space{
 	width: 7em;
@@ -9,12 +10,12 @@
 	padding: .5em;
 	border: solid black;
 	vertical-align: text-top;
-	width: 14em;
+	width: 25em;
 }
 .dayLayout{
 	text-align: center;
 	border: solid black;
-	font-size: x-large;
+	font-size: xx-large;
 	padding: .5em;
 	font-style: italic;
 	font-weight: bold;
@@ -22,7 +23,7 @@
 .references{
 	text-align: center;
 	border: solid black;
-	font-size: large;
+	font-size: xx-large;
 	padding: .5em;
 	font-style: italic;
 }
@@ -38,4 +39,7 @@
 label{
     font-weight: bolder;
     font-style: italic;   
+}
+html{
+    font-size: xx-large;
 }

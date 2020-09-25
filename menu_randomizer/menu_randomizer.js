@@ -96,12 +96,12 @@ function cardGenerator(nameOfDish, dishType, dishDescription, ingredientList,
     toolList, cookingDirections){
     //Generate an HTML card with its details.
     var text = 
-        "<div><label>NAME:</label> " + nameOfDish + "</div><hr />" +
-        "<div><label>DISH TYPE:</label> " + dishType + "</div><hr />" +
-        "<div><label>DESCRIPTION:</label> " + dishDescription + "</div><hr />" + 
-        "<div><label>INGREDIENTS LIST:</label> " + ingredientList + "</div><hr />" +
-        "<div><label>TOOLS LIST:</label> " + toolList + "</div><hr />" +
-        "<div><strong>COOKING DIRECTIONS:</strong><hr /><br />";
+        "<div style=\"font-size:xx-large;\"><label>NAME:</label> " + nameOfDish + "</div><hr />" +
+        "<div style=\"font-size:xx-large;\"><label>DISH TYPE:</label> " + dishType + "</div><hr />" +
+        "<div style=\"font-size:xx-large;\"><label>DESCRIPTION:</label> " + dishDescription + "</div><hr />" + 
+        "<div style=\"font-size:xx-large;\"><label>INGREDIENTS LIST:</label> " + ingredientList + "</div><hr />" +
+        "<div style=\"font-size:xx-large;\"><label>TOOLS LIST:</label> " + toolList + "</div><hr />" +
+        "<div style=\"font-size:xx-large;\"><strong>COOKING DIRECTIONS:</strong><hr /><br />";
     //Evaluates each element of the cookingDirections array and adds those details to HTML card.
     for(var x = 0; x < cookingDirections.length; x++){
         if(cookingDirections[x] === null){
