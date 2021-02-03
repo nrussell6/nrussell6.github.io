@@ -1,13 +1,13 @@
 //Defining Game Spaces
-var button1 = document.querySelector(".button1");
-var button2 = document.querySelector(".button2");
-var button3 = document.querySelector(".button3");
-var button4 = document.querySelector(".button4");
-var button5 = document.querySelector(".button5");
-var button6 = document.querySelector(".button6");
-var button7 = document.querySelector(".button7");
-var button8 = document.querySelector(".button8");
-var button9 = document.querySelector(".button9");
+var button1 = document.querySelector("#button1");
+var button2 = document.querySelector("#button2");
+var button3 = document.querySelector("#button3");
+var button4 = document.querySelector("#button4");
+var button5 = document.querySelector("#button5");
+var button6 = document.querySelector("#button6");
+var button7 = document.querySelector("#button7");
+var button8 = document.querySelector("#button8");
+var button9 = document.querySelector("#button9");
 var gameTable = document.querySelector(".table");
 
 //Defining Reset Button
@@ -35,7 +35,7 @@ function turnChange(){ //switches turn
 	} else{
 		currentTurn = xTurn;
 	}
-	currentTurnIndicator.innerHTML = "<h1>Current Turn: " + currentTurn + "</h1>";
+	currentTurnIndicator.innerHTML = currentTurn;
 }
 
 function gameSpaceEventListener(){
@@ -44,89 +44,89 @@ function gameSpaceEventListener(){
 		claimedBy[0] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button2.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[1] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button3.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[2] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button4.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[3] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button5.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[4] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button6.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[5] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button7.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[6] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button8.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[7] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 	button9.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[8] = currentTurn; //sets who claims this piece, X or O
 
 		turnChange();
-		this.style.cssText = "pointer-events: none"; //disables additional clicking
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
 }
 
 function resetButtonToggle(gameOn){ //Makes each space clickable or unclickable
 	switch(gameOn){
 		case "yes":
-			button1.style.cssText = "pointer-events: auto";
-			button2.style.cssText = "pointer-events: auto";
-			button3.style.cssText = "pointer-events: auto";
-			button4.style.cssText = "pointer-events: auto";
-			button5.style.cssText = "pointer-events: auto";
-			button6.style.cssText = "pointer-events: auto";
-			button7.style.cssText = "pointer-events: auto";
-			button8.style.cssText = "pointer-events: auto";
-			button9.style.cssText = "pointer-events: auto";
+			button1.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button2.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button3.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button4.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button5.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button6.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button7.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button8.style.cssText = "pointer-events: auto; width:4em; height:4em;";
+			button9.style.cssText = "pointer-events: auto; width:4em; height:4em;";
 			break;
 		case "no":
-			button1.style.cssText = "pointer-events: none";
-			button2.style.cssText = "pointer-events: none";
-			button3.style.cssText = "pointer-events: none";
-			button4.style.cssText = "pointer-events: none";
-			button5.style.cssText = "pointer-events: none";
-			button6.style.cssText = "pointer-events: none";
-			button7.style.cssText = "pointer-events: none";
-			button8.style.cssText = "pointer-events: none";
-			button9.style.cssText = "pointer-events: none";
+			button1.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button2.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button3.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button4.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button5.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button6.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button7.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button8.style.cssText = "pointer-events: none; width:4em; height:4em;";
+			button9.style.cssText = "pointer-events: none; width:4em; height:4em;";
 			break;
 
 	}
@@ -136,7 +136,7 @@ function gameReset(){
 	gameOn = "yes";
 	resetButtonToggle(gameOn);
 	currentTurn = "X";
-	currentTurnIndicator.innerHTML = "<h1>Current Turn: " + currentTurn + "</h1>";
+	currentTurnIndicator.innerHTML = currentTurn;
 	//button1
 	button1.innerHTML = " "; //resets innerHTML.
 	claimedBy[0] = " "; //resets claimed by
@@ -179,11 +179,11 @@ function addToScore(winner){
 	switch(winner){
 		case "X":
 			timesXWins++; //Adds 1 to X's score
-			xWins.innerHTML = "<h1>X: " + timesXWins + "</h1>"; //Prints new score
+			xWins.innerHTML = "X: " + timesXWins; //Prints new score
 			break;
 		case "O":
 			timesOWins++; //adds 1 to Y's score
-			oWins.innerHTML = "<h1>O: " + timesOWins + "</h1>"; //Prints new score
+			oWins.innerHTML = "O: " + timesOWins; //Prints new score
 			break;
 	}
 	return(winner);
@@ -309,13 +309,13 @@ function victoryCondition(){
 		addToScore(winner);
 		currentTurn = " ";
 	}
-	currentTurnIndicator.innerHTML = "<h1>Current Turn: " + currentTurn + "</h1>";
+	currentTurnIndicator.innerHTML = currentTurn;
 }
 
 
 function artificialIntelligence(){
-	var xAiCheckbox = document.querySelector(".xAI");
-	var oAiCheckbox = document.querySelector(".oAI");
+	var xAiCheckbox = document.querySelector("#xAI");
+	var oAiCheckbox = document.querySelector("#oAI");
 	var ranNum = Math.floor(Math.random()*10);
 
 	//Player X's AI
@@ -326,7 +326,7 @@ function artificialIntelligence(){
 					button1.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[0] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button1.style.cssText = "pointer-events: none"; //disables additional clicking
+					button1.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 2:
@@ -334,7 +334,7 @@ function artificialIntelligence(){
 					button2.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[1] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button2.style.cssText = "pointer-events: none"; //disables additional clicking
+					button2.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 3:
@@ -342,7 +342,7 @@ function artificialIntelligence(){
 					button3.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[2] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button3.style.cssText = "pointer-events: none"; //disables additional clicking
+					button3.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 4:
@@ -350,7 +350,7 @@ function artificialIntelligence(){
 					button4.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[3] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button4.style.cssText = "pointer-events: none"; //disables additional clicking
+					button4.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 5:
@@ -358,7 +358,7 @@ function artificialIntelligence(){
 					button5.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[4] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button5.style.cssText = "pointer-events: none"; //disables additional clicking
+					button5.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 6:
@@ -366,7 +366,7 @@ function artificialIntelligence(){
 					button6.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[5] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button6.style.cssText = "pointer-events: none"; //disables additional clicking
+					button6.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 7:
@@ -374,7 +374,7 @@ function artificialIntelligence(){
 					button7.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[6] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button7.style.cssText = "pointer-events: none"; //disables additional clicking
+					button7.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 8:
@@ -382,7 +382,7 @@ function artificialIntelligence(){
 					button8.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[7] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button8.style.cssText = "pointer-events: none"; //disables additional clicking
+					button8.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 9:
@@ -390,7 +390,7 @@ function artificialIntelligence(){
 					button9.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[8] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button9.style.cssText = "pointer-events: none"; //disables additional clicking
+					button9.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			default:
@@ -406,7 +406,7 @@ function artificialIntelligence(){
 					button1.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[0] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button1.style.cssText = "pointer-events: none"; //disables additional clicking
+					button1.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 2:
@@ -414,7 +414,7 @@ function artificialIntelligence(){
 					button2.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[1] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button2.style.cssText = "pointer-events: none"; //disables additional clicking
+					button2.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 3:
@@ -422,7 +422,7 @@ function artificialIntelligence(){
 					button3.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[2] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button3.style.cssText = "pointer-events: none"; //disables additional clicking
+					button3.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 4:
@@ -430,7 +430,7 @@ function artificialIntelligence(){
 					button4.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[3] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button4.style.cssText = "pointer-events: none"; //disables additional clicking
+					button4.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 5:
@@ -438,7 +438,7 @@ function artificialIntelligence(){
 					button5.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[4] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button5.style.cssText = "pointer-events: none"; //disables additional clicking
+					button5.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 6:
@@ -446,7 +446,7 @@ function artificialIntelligence(){
 					button6.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[5] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button6.style.cssText = "pointer-events: none"; //disables additional clicking
+					button6.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 7:
@@ -454,7 +454,7 @@ function artificialIntelligence(){
 					button7.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[6] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button7.style.cssText = "pointer-events: none"; //disables additional clicking
+					button7.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 8:
@@ -462,7 +462,7 @@ function artificialIntelligence(){
 					button8.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[7] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button8.style.cssText = "pointer-events: none"; //disables additional clicking
+					button8.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			case 9:
@@ -470,7 +470,7 @@ function artificialIntelligence(){
 					button9.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 					claimedBy[8] = currentTurn; //sets who claims this piece, X or O
 					turnChange();
-					button9.style.cssText = "pointer-events: none"; //disables additional clicking
+					button9.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 					break;
 				} 
 			default:
@@ -483,7 +483,7 @@ function artificialIntelligence(){
 //Old gameFlow() function
 function gameFlow(){
 	gameSpaceEventListener();
-	currentTurnIndicator.innerHTML = "<h1>Current Turn: " + currentTurn + "</h1>";
+	currentTurnIndicator.innerHTML = currentTurn;
 	artificialIntelligence();
 	document.addEventListener("click", function(){
 		victoryCondition();
