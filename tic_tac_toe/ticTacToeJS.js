@@ -46,6 +46,13 @@ function gameSpaceEventListener(){
 		turnChange();
 		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
 	});
+	button1.addEventListener("touchstart", function(){
+		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
+		claimedBy[0] = currentTurn; //sets who claims this piece, X or O
+
+		turnChange();
+		this.style.cssText = "pointer-events: none; width:4em; height:4em;"; //disables additional clicking
+	});
 	button2.addEventListener("click", function(){
 		this.innerHTML = "<h1>" + currentTurn + "</h1>"; //sets piece to whose turn it is.
 		claimedBy[1] = currentTurn; //sets who claims this piece, X or O
