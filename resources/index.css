@@ -1,0 +1,473 @@
+/*---Default--*/
+header, main, footer{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+}
+header{
+    margin:3%;
+}
+img{
+    width:80%;
+    margin:1%;
+}
+section{
+    border: 2px solid black;
+    width:100%;
+    height:100%;
+    text-align:center;
+    padding:0;
+    position:relative;
+    padding-top:3%;
+}
+
+footer a:first-child{
+    display:block;
+    text-align:center;
+}
+footer a{
+    padding-top:2%;
+    justify-content: space-around;
+    padding-right:0.8rem;
+}
+footer{
+    margin-top:2%;
+    margin-bottom:5%;
+}
+h2{
+    margin:0.3rem 0;
+}
+footer div{
+    margin-left:3%;
+}
+.sectionDescription{
+    margin-bottom:3%;
+    margin-left:3%;
+}
+.sectionFoot{
+    border-top: 2px solid black;
+    display:block;
+    padding-top:3%;
+    padding-bottom:3%;
+    /* background-color:blue; */
+}
+
+/*---Portrait---*/
+/*--Devices:  
+    Galaxy Fold(One Screen--*/
+@media only screen and (orientation:portrait) and (min-width:280px) and (max-width:319px){
+    header, main, footer{
+        flex-direction:column;
+    }
+    header{
+        font-size:1.3rem;
+        font-weight:bold;
+    }
+    section{
+        border-bottom:none;
+    }
+    section:last-child{
+        border-bottom:2px solid black;
+    }
+    h2{
+        font-size:2rem;
+        font-weight:bold;
+    }
+    footer div a{
+        display:block;
+        text-align:center;
+        font-size:1.4rem;
+    }
+    .sectionDescription{
+        font-size:2rem;
+    }
+    .sectionFoot{
+        font-size: 1.8rem;
+    }
+}
+
+/*--Devices:  
+    iPhone5/SE, Galaxy Fold--*/
+@media only screen and (orientation:portrait) and (min-width:320px) and (max-width:359px){
+    header, main, footer{
+        flex-direction:column;
+    }
+    header{
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    section{
+        border-bottom:none;
+    }
+    section:last-child{
+        border-bottom:2px solid black;
+    }
+    h2{
+        font-size:2rem;
+        font-weight:bold;
+    }
+    footer div a{
+        display:block;
+        text-align:center;
+        font-size:1.4rem;
+    }
+    .sectionDescription{
+        font-size:1.4rem;
+    }
+    .sectionFoot{
+        font-size: 1.8rem;
+    }
+}
+/*--Devices:  
+    Moto G4, Galaxy S5, Pixel 2 Pixel 2 XL, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, Surface Duo--*/
+@media only screen and (orientation:portrait) and (min-width:360px) and (max-width:767px){
+    header, main, footer{
+        flex-direction:column;
+    }
+    header{
+        font-size:1.8rem;
+        font-weight:bold;
+    }
+    h2{
+        font-size:2rem;
+        font-weight:bold;
+    }
+    footer div a{
+        display:block;
+        text-align:center;
+        font-size:1.4rem;
+    }
+    section{
+        border-bottom:none;
+    }
+    section:last-child{
+        border-bottom:2px solid black;
+    }
+    .sectionDescription{
+        font-size:1.4rem;
+    }
+    .sectionFoot{
+        font-size: 1.8rem;
+    }
+}
+/*--Devices:  
+    iPad--*/
+@media only screen and (orientation:portrait) and (min-width:768px) and (max-width:1023px){
+    header, main, footer{
+        flex-direction:column;
+    }
+    header{
+        font-size:3.3rem;
+        font-weight:bold;
+    }
+    h2{
+        font-size:3rem;
+        font-weight:bold;
+    }
+    footer div a{
+        display:block;
+        text-align:center;
+        font-size:2rem;
+    }
+    section{
+        border-bottom:none;
+    }
+    section:last-child{
+        border-bottom:2px solid black;
+    }
+    .sectionDescription{
+        font-size:2.5rem;
+    }
+    .sectionFoot{
+        font-size: 2.8rem;
+    }
+}
+
+/*--Devices:
+    iPad Pro--*/
+@media only screen and (orientation:portrait) and (min-width:1024px){
+    header, main, footer{
+        flex-direction:column;
+    }
+    header{
+        font-size:5rem;
+        font-weight:bold;
+    }
+    h2{
+        font-size:4.5rem;
+        font-weight:bold;
+    }
+    footer div a{
+        display:block;
+        text-align:center;
+        font-size:3rem;
+    }
+    section{
+        border-bottom:none;
+    }
+    section:last-child{
+        border-bottom:2px solid black;
+    }
+    .sectionDescription{
+        font-size:3rem;
+    }
+    .sectionFoot{
+        font-size: 3.8rem;
+    }
+}
+
+/*---Landscape---*/
+/*--Devices:
+    iPhone 5/SE--*/
+@media only screen and (orientation:landscape) and (min-width:568px) and (max-width:639px){
+    header, main, footer{
+        flex-direction:column;
+    }
+    header{
+        font-size: 2.5em;
+        font-weight:bold;
+    }
+    h2{
+        font-size:2.5rem;
+        font-weight:bold;
+    }
+    footer div a{
+        display:block;
+        text-align:center;
+        font-size:2rem;
+    }
+    section{
+        border-bottom:none;
+    }
+    section:last-child{
+        border-bottom:2px solid black;
+    }
+    .sectionDescription{
+        font-size:2rem;
+    }
+    .sectionFoot{
+        font-size: 2.5rem;
+    }
+}
+/*--Devices:
+    Moto G4, Galaxy S5, iPhone 6/7/8--*/
+@media only screen and (orientation:landscape) and (min-width:640px) and (max-width:719px){
+    header, main, footer{
+        flex-direction:column;
+    }
+    header{
+        font-size:3rem;
+        font-weight:bold;
+    }
+    h2{
+        font-size:2.5rem;
+        font-weight:bold;
+    }
+    footer div a{
+        display:block;
+        text-align:center;
+        font-size:2rem;
+    }
+    section{
+        border-bottom:none;
+    }
+    section:last-child{
+        border-bottom:2px solid black;
+    }
+    .sectionDescription{
+        font-size:2rem;
+    }
+    .sectionFoot{
+        font-size: 2.5rem;
+    }
+}
+/*--Devices:
+    Pixel 2, iPhone 6/7/8 Plus, Surface Duo--*/
+@media only screen and (orientation:landscape) and (min-width:720px) and (max-width:799px){
+    main{
+        position:relative;
+        padding:0 2%;
+    }
+    header{
+        font-size:3.5rem;
+        margin:0.5rem 0;
+    }
+    section{
+        padding:0;
+        height:17rem;
+        font-size:1.3rem;
+        
+    }
+    footer{
+        margin-top:0;
+        font-size:1.4rem;
+
+    }
+    h2{
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .sectionFoot{
+        position:absolute;
+        width:100%;
+        bottom:0;
+    }
+}
+/*--Devices:
+    Pixel 2XL, iPhone X--*/
+@media only screen and (orientation:landscape) and (min-width:800px) and (max-width:1023px){
+    main{
+        position:relative;
+        padding:0 2%;
+    }
+    header{
+        font-size:2.3rem;
+        margin-top:0.5rem;
+        margin-bottom:0;
+
+    }
+    section{
+        padding:0;
+        height:18rem;
+        font-size:1.5rem;
+        padding-bottom:0.9rem;
+        margin-bottom:0;
+        
+    }
+    footer{
+        margin-top:0;
+        font-size:1.4rem;
+
+    }
+    h2{
+        font-size:1.5rem;
+        font-weight:bold;
+    }
+    .sectionFoot{
+        position:absolute;
+        width:100%;
+        bottom:0;
+    }
+}
+/*--Devices:
+    iPad--*/
+@media only screen and (orientation:landscape) and (min-width:1024px) and (max-width:1100px){
+    main{
+        position:relative;
+        padding:0 2%;
+    }
+    header{
+        font-size:4.5rem;
+        margin: 1rem 0;
+
+    }
+    section{
+        padding:0;
+        height:25rem;
+        font-size:1.8rem;
+        padding-bottom:0.9rem;
+        margin-bottom:0;
+        
+    }
+    footer{
+        margin-top:0;
+        font-size:2rem;
+    }
+    h2{
+        font-size:2rem;
+        font-weight:bold;
+    }
+    h2, footer div{
+        margin-top:1rem;
+    }
+    .sectionDescription{
+        padding:0 0.5rem;
+    }
+    .sectionFoot{
+        position:absolute;
+        width:100%;
+        bottom:0;
+    }
+}
+
+/*--Devices:
+    iPad Pro, Fire HD10--*/
+@media only screen and (orientation:landscape) and (min-width:1101px) and (max-width:1366px){
+    main{
+        position:relative;
+        padding:0 2%;
+    }
+    header{
+        font-size:5rem;
+        margin: 1.5rem 0;
+
+    }
+    section{
+        padding:0;
+        height:30rem;
+        font-size:2rem;
+        padding-bottom:0.9rem;
+        margin-bottom:0;
+        
+    }
+    footer{
+        margin-top:0;
+        font-size:2.5rem;
+    }
+    h2{
+        font-size:2.5rem;
+        font-weight:bold;
+    }
+    h2, footer div{
+        margin-top:1rem;
+    }
+    .sectionDescription{
+        padding:0 0.5rem;
+    }
+    .sectionFoot{
+        position:absolute;
+        width:100%;
+        bottom:0;
+    }
+}
+/*--Devices
+    Desktop --*/
+@media only screen and (orientation:landscape) and (min-width:1367px){
+    main{
+        position:relative;
+        padding:0 2%;
+    }
+    header{
+        font-size:5rem;
+        margin: 1.5rem 0;
+
+    }
+    section{
+        padding:0;
+        height:40rem;
+        font-size:2rem;
+        padding-bottom:0.9rem;
+        margin-bottom:0;
+        
+    }
+    footer{
+        margin-top:0;
+        font-size:2.5rem;
+    }
+    h2{
+        font-size:2.5rem;
+        font-weight:bold;
+    }
+    h2, footer div{
+        margin-top:1rem;
+    }
+    .sectionDescription{
+        padding:0 0.5rem;
+    }
+    .sectionFoot{
+        position:absolute;
+        width:100%;
+        bottom:0;
+    }
+}
