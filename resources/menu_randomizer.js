@@ -95,48 +95,21 @@ function randomNumber(min, max){
 function cardGenerator(nameOfDish, dishType, dishDescription, ingredientList, 
     toolList, cookingDirections){
     //Generate an HTML card with its details.
-
     var text = 
-        "<div class='card bg-info text-start'>" +
-            "<div class= 'card-body'>" +
-                "<div class='card-text'>" +
-                    "<div class='row'>" +
-                        "<div class='col-12 col-md-4 mb-2'>NAME: " + nameOfDish + "</div>"+
-                        "<div class='col-12 col-md-4 mb-2'>TYPE: " + dishType + "</div>"+
-                        "<div class='col-12 col-md-12 mb-2'>DESCRIPTION: " + dishDescription + "</div>" +
-                        "<div class='col-12 col-md-6 mb-2'>TOOL LIST: " + toolList + "</div>" +
-                        "<div class='col-12 col-md-6 mb-2'>INGREDIENT LIST: " + ingredientList + "</div>" +
-                        "<strong class='col-12 mb-2 text-start text-md-center'>COOKING DIRECTIONS:</strong>";
-
-     for(var x = 0; x < cookingDirections.length; x++){
+        "<div>NAME: " + nameOfDish + "</div>" +
+        "<div>DISH TYPE: " + dishType + "</div>" +
+        "<div>DESCRIPTION: " + dishDescription + "</div>" + 
+        "<div>INGREDIENTS LIST: " + ingredientList + "</div>" +
+        "<div>TOOLS LIST: " + toolList + "</div>" +
+        "<div>COOKING DIRECTIONS:";
+    //Evaluates each element of the cookingDirections array and adds those details to HTML card.
+    for(var x = 0; x < cookingDirections.length; x++){
         if(cookingDirections[x] === null){
             break;
         }
-        text +=
-            "<div class='col-12 mb-2'>" + 
-            cookingDirections[x] + 
-            "</div><br /><br />";
+        text += cookingDirections[x];
         }
-    text +=
-                    "</div>" +
-                "</div>" +
-            "</div>" +
-        "</div>";
-    // var text = 
-    //     "<label>NAME:</label> " + nameOfDish + "<hr />" +
-    //     "<label>DISH TYPE:</label> " + dishType + "<hr />" +
-    //     "<label>DESCRIPTION:</label> " + dishDescription + "<hr />" + 
-    //     "<label>INGREDIENTS LIST:</label> " + ingredientList + "<hr />" +
-    //     "<label>TOOLS LIST:</label> " + toolList + "<hr />" +
-    //     "<strong>COOKING DIRECTIONS:</strong><br />";
-    //Evaluates each element of the cookingDirections array and adds those details to HTML card.
-    // for(var x = 0; x < cookingDirections.length; x++){
-    //     if(cookingDirections[x] === null){
-    //         break;
-    //     }
-    //     text += cookingDirections[x] + "<br /><br />";
-    //     }
-    // text += "</div>";
+    text += "</div>";
     return text;
 }
 

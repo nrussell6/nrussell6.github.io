@@ -1,0 +1,591 @@
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+	text-align:center;
+}
+header h1{
+	padding:1rem 0;
+	/* font-weight:bold; */
+}
+
+body main{
+	padding:1.5rem;
+	margin-bottom:5rem;
+}
+main button{
+	display:block;
+	width:100%;
+}
+main h3{
+	display:block;
+	width:100%;
+	border-bottom:1px solid black;
+	font-weight:bold;
+	padding:0.5rem 0;
+}
+section img{
+	margin-bottom:1rem;
+}
+img{
+	width:10rem;
+}
+button{
+	background:none;
+	font-weight:bold;
+}
+.explanation{
+	padding-bottom:1rem;
+}
+.explanation p{
+	margin:0 1rem;
+}
+.saveField{
+	padding-bottom:1rem;
+	border-top:3px solid black;
+	border-bottom:3px solid black;
+}
+.explanation h2, .saveField h2{
+	font-weight:bold;
+	padding:0.5rem 0;
+	margin-bottom:0.5rem;
+}
+.explanation h2{
+	border-bottom:1px solid black;
+}
+.saveField h2{
+	border-bottom:none;
+	border-left:none;
+	border-right:none;
+}
+.saveField button{
+	width:100%;
+	padding:0.5rem;
+	font-size:2rem;
+	margin-top:1rem;
+}
+.recipeDetails{
+	margin:0 1rem;
+	padding-top:1rem;
+}
+.recipeCard{
+	margin-top:1rem;
+}
+.mealName, .dishDescription, .toolsList, .ingredientList{
+	padding:0.5rem 0;
+}
+.step{
+	padding:1rem 0;
+}
+.generateMealButton{
+	height:5rem;
+}
+/*---Portrait Mode---*/
+/*--Disabling Landscape HTML Elements and hiding .toolsList, .ingredientList, .directions --*/
+@media only screen and (orientation:portrait) and (min-width:1px){
+	.landscapeMode{
+		display:none;
+	}
+	.toolsList, .ingredientList, .directions{
+		display:none;
+	}
+}
+/*--Devices:
+	Galaxy Fold--*/
+@media only screen and (orientation:portrait) and (min-width:280px) and (max-width:319px){
+	header h1{
+		font-size:2rem;
+	}
+	button{
+		font-size:1.4rem;
+	}
+	section img{
+		width:15rem;
+	}
+	body main{
+		margin:0;
+		margin-bottom:3rem;
+		padding:0;
+	}
+	main h3{
+		font-size:1.8rem;
+	}
+	.explanation{
+		font-size:1.8rem;
+	}
+	.explanation p{
+		margin:0.2rem;
+	}
+	.saveField, .saveButton{
+		font-size:1.8rem;
+	}
+	.step{
+		padding:0.2rem;
+	}
+	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
+		font-size:2rem;
+	}
+	.recipeDetails, main{
+		margin:0;
+		padding:1rem 0;
+	}
+	.recipeDetails{
+		margin:0 0.5rem;
+	}
+	.saveField button:nth-of-type(1){
+		margin-bottom:1rem;
+	}
+	
+	.generateMealButton{
+		width:100%;
+		font-weight:bold;
+		margin-top:1rem;
+	}
+}
+/*--Devices:
+	iPhone 5/SE--*/
+@media only screen and (orientation:portrait) and (min-width:320px) and (max-width:359px){
+	header h1{
+		font-size:2.2rem;
+	}
+	button{
+		font-size:1.5rem;
+	}
+	section img{
+		width:15rem;
+	}
+	body main{
+		margin:0;
+		margin-bottom:3rem;
+		padding:0;
+	}
+	main h3{
+		font-size:1.8rem;
+	}
+	.explanation{
+		font-size:1.8rem;
+	}
+	.saveField, .saveButton{
+		font-size:1.8rem;
+	}
+	.step{
+		padding:0.5rem 0;
+	}
+	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
+		font-size:2rem;
+	}
+	.recipeDetails, main{
+		margin:0;
+		padding:1rem 0;
+	}
+	.recipeDetails{
+		margin:0 0.5rem;
+	}
+	.saveField button:nth-of-type(1){
+		margin-bottom:1rem;
+	}
+	
+	.generateMealButton{
+		width:100%;
+		font-weight:bold;
+		margin-top:1rem;
+	}
+}	
+/*--Devices:
+	Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8, iPhone 6/7/8 Plus, Surface Duo--*/
+@media only screen and (orientation:portrait) and (min-width:360px) and (max-width:767px){
+	header h1{
+		font-size:2.5rem;
+	}
+	body main{
+		padding:0;
+	}
+	button{
+		font-size:1.9rem;
+	}
+	section img{
+		width:15rem;
+	}
+	main h3{
+		font-size:1.8rem;
+	}
+	.explanation{
+		font-size:1.8rem;
+	}
+	.saveField, .saveButton{
+		font-size:1.8rem;
+	}
+	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
+		font-size:2.5rem;
+	}
+	.recipeDetails, main{
+		margin:0;
+		padding:1rem 0;
+	}
+	.recipeDetails{
+		margin:0 0.5rem;
+	}
+	.saveField button:nth-of-type(1){
+		margin-bottom:1rem;
+	}
+	.generateMealButton{
+		width:100%;
+		font-weight:bold;
+		font-size:1.5rem;
+	}
+}
+/*--Devices:
+	iPhoneX, Surface Duo--*/
+@media only screen and (orientation:portrait) and (min-width:375px) and (max-width:767px){
+	body main{
+		padding:0;
+	}
+	.generateMealButton{
+		font-size:1.8rem;
+	}
+	main h3{
+		font-size:3rem;
+	}
+	button{
+		font-size:2rem;
+	}
+}
+/*--Devices:
+	Surface Duo--*/
+@media only screen and (orientation:portrait) and (min-width:540px) and (max-width:767px){
+	button{
+		font-size:2.3rem;
+	}
+}
+/*--Devices:
+	iPad--*/
+@media only screen and (orientation:portrait) and (min-width:768px) and (max-width:1023px){
+	header h1{
+		font-size:5rem;
+	}
+	header h2{
+		font-size:3rem;
+	}
+	header p{
+		padding:1rem 0;
+	}
+	button{
+		font-size:2.5rem;
+	}
+	section img{
+		width:30rem;
+	}
+	body main{
+		padding:0;
+	}
+	main h3{
+		font-size:3rem;
+	}
+	main button{
+		font-size:2.9rem;
+	}
+	.saveField{
+		padding:2rem 0;
+	}
+	.explanation{
+		font-size:2.3rem;
+	}
+	.saveField, .saveButton{
+		font-size:2.5rem;
+	}
+	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
+		font-size:2.5rem;
+		padding:1rem 0;
+	}
+	.recipeDetails, main{
+		margin:0;
+		padding:1rem 0;
+	}
+	.recipeDetails{
+		margin:0 0.5rem;
+	}
+	.saveField button:nth-of-type(1){
+		margin-bottom:1rem;
+	}
+	
+	.generateMealButton{
+		width:100%;
+		font-weight:bold;
+		font-size:2.8rem;
+	}
+}
+/*--Devices:
+	iPad Pro--*/
+@media only screen and (orientation:portrait) and (min-width:1024px){
+	header h1{
+		font-size:7rem;
+	}
+	header h2{
+		font-size:5rem;
+	}
+	header p{
+		padding:1rem 0.5rem;
+		font-size:4rem;
+	}
+	section img{
+		width:50rem;
+	}
+	main h3{
+		font-size:5rem;
+	}
+	main button{
+		font-size:4.5rem;
+	}
+	.saveField{
+		padding:2rem 0;
+	}
+	.explanation{
+		font-size:2.3rem;
+	}
+	.saveField, .saveButton{
+		font-size:4.5rem;
+	}
+	.step, .toolsList, .ingredientList, .dishDescription{
+		font-size:4rem;
+		padding:1rem 0.5rem;
+	}
+	.mealName{
+		font-size:4.5rem;
+		padding:1rem 0.5rem;
+	}
+	.recipeDetails, main{
+		margin:0;
+		padding:1rem 0;
+	}
+	.recipeDetails{
+		margin:0 0.5rem;
+	}
+	.saveField button:nth-of-type(1){
+		margin-bottom:1rem;
+	}
+	
+	.generateMealButton{
+		width:100%;
+		font-weight:bold;
+		font-size:4.5rem;
+		height:10rem;
+	}
+}
+
+/*---Landscape Mode---*/
+/*--Disabling Portrait Mode HTML elements and hiding .toolsList, .ingredientList, .directions --*/
+@media only screen and (orientation:landscape) and (min-width:1px){
+	.portraitMode{
+		display:none;
+	}
+	.toolsList, .ingredientList, .directions{
+		display:none;
+	}
+}
+/*--Devices:
+	iPhone 5/SE--*/
+@media only screen and (orientation:landscape) and (min-width:568px) and (max-width:639px){
+	/*--Re-enabling portrait mode version for this screen size--*/
+	.portraitMode{
+		display:block;
+	}
+	.landscapeMode{
+		display:none;
+	}
+	header h1{
+		font-size:4rem;
+	}
+	button{
+		font-size:1.5rem;
+	}
+	section img{
+		width:15rem;
+	}
+	body main{
+		margin:0;
+		margin-bottom:3rem;
+		padding:0;
+	}
+	main h3{
+		font-size:2.5rem;
+	}
+	.explanation{
+		font-size:2.8rem;
+	}
+	.explanation p{
+		font-size:2.5rem;
+	}
+	.saveField, .saveButton{
+		font-size:1.8rem;
+	}
+	.saveField h2{
+		font-size:3rem;
+	}
+	.step{
+		padding:0.5rem;
+	}
+	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
+		font-size:2.5rem;
+	}
+	.recipeDetails, main{
+		margin:0;
+		padding:1rem 0;
+	}
+	.recipeDetails{
+		margin:0 0.5rem;
+	}
+	.recipeDetails button{
+		font-size:2rem;
+	}
+	.saveField button:nth-of-type(1){
+		margin-bottom:1rem;
+	}
+	
+	.generateMealButton{
+		width:100%;
+		font-weight:bold;
+		margin-top:1rem;
+		font-size:2.3rem;
+	}
+}
+/*--Devices:
+	Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, Surface Duo, Galaxy Fold--*/
+@media only screen and (orientation:landscape) and (min-width:640px) and (max-width:1023px){
+	/*--Re-enabling portrait mode version for this screen size--*/
+	.portraitMode{
+		display:block;
+	}
+	.landscapeMode{
+		display:none;
+	}
+	header h1{
+		font-size:4.5rem;
+	}
+	button{
+		font-size:1.8rem;
+	}
+	section img{
+		width:15rem;
+	}
+	main h3{
+		font-size:2.5rem;
+	}
+	.explanation{
+		font-size:2rem;
+	}
+	.saveField, .saveButton{
+		font-size:2.5rem;
+	}
+	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
+		font-size:2.8rem;
+	}
+	.recipeDetails, main{
+		margin:0;
+		padding:1rem 0;
+	}
+	.recipeDetails{
+		margin:0 0.5rem;
+	}
+	.recipeDetails button{
+		font-size:2.5rem;
+	}
+	.saveField button:nth-of-type(1){
+		margin-bottom:1rem;
+	}
+	
+	.generateMealButton{
+		width:100%;
+		font-weight:bold;
+		font-size:2.5rem;
+	}
+}
+
+/*--Devices:
+	Pixel 2, Pixel 2 XL--*/
+@media only screen and (orientation:landscape) and (min-width:731px) and (max-width:1023px){
+	main img{
+		width:30rem;
+	}
+	.explanation{
+		font-size:2.8rem;
+	}
+}
+/*--Devices:  
+	iPad, iPad Pro --*/
+@media only screen and (orientation:landscape) and (min-width:1024px){
+	body header, .recipeDetails{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		margin: 0 5%;
+	}
+	body main{
+		padding-top:0;
+	}
+	header h1{
+		width:100%;
+		font-size:4.5rem;
+		/* font-weight:bold; */
+	}
+	main h3{
+		font-size:3rem;
+	}
+	.explanation h2{
+		font-size:2.5rem;
+	}
+	.generateMealButton{
+		align-self:center;
+		flex: 1;
+		margin: 0 2%;
+		height:100%;
+		border:2px solid black;
+		border-radius:20%;
+		padding:1rem;
+		font-size:2rem;
+	}
+	.explanation{
+		flex:3;
+		margin: 0 2%;
+		font-size:2rem;
+	}
+	.saveField{
+		flex:2;
+		height:100%;
+		border:1px solid black;
+		font-size:2rem;
+	}
+	.saveOptions{
+		margin:0;
+		display:flex;
+		flex-direction: row;
+	}
+	.saveOptions button{
+		width:100%;
+		font-size:1.5rem;
+	}
+	.mealName{
+		width:80%;
+		align-self:center;
+		text-align:start;
+		font-size:3.4rem;
+	}
+	.options{
+		display:flex;
+		flex-direction:row;
+		width:80%;
+		height:3rem;
+		align-self:flex-end;
+	}
+	.options button{
+		font-size:2rem;
+	}
+	.dishType{
+		width:20%;
+		border-radius:10%;
+		margin-bottom: 0;
+	}
+	.dishDescription, .toolsList, .ingredientList, .directions{
+		font-size:2.5rem;
+	}
+	
+}
