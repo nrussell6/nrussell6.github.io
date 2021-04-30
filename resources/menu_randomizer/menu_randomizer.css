@@ -6,7 +6,7 @@ body {
 }
 header h1{
 	padding:1rem 0;
-	/* font-weight:bold; */
+
 }
 
 body main{
@@ -61,7 +61,6 @@ button{
 .saveField button{
 	width:100%;
 	padding:0.5rem;
-	font-size:2rem;
 	margin-top:1rem;
 }
 .recipeDetails{
@@ -116,8 +115,11 @@ button{
 	.explanation p{
 		margin:0.2rem;
 	}
-	.saveField, .saveButton{
-		font-size:1.8rem;
+	.descBtn, .directionBtn{
+		font-size:1.5rem;
+	}
+	.toolIngBtn{
+		font-size:1.3rem;
 	}
 	.step{
 		padding:0.2rem;
@@ -165,8 +167,8 @@ button{
 	.explanation{
 		font-size:1.8rem;
 	}
-	.saveField, .saveButton{
-		font-size:1.8rem;
+	.saveField, .saveField button, .generateMealButton{
+		font-size:2rem;
 	}
 	.step{
 		padding:0.5rem 0;
@@ -203,6 +205,9 @@ button{
 	button{
 		font-size:1.9rem;
 	}
+	.toolIngBtn{
+		font-size:1.8rem;
+	}
 	section img{
 		width:15rem;
 	}
@@ -231,7 +236,7 @@ button{
 	.generateMealButton{
 		width:100%;
 		font-weight:bold;
-		font-size:1.5rem;
+		font-size:2rem;
 	}
 }
 /*--Devices:
@@ -240,15 +245,25 @@ button{
 	body main{
 		padding:0;
 	}
-	.generateMealButton{
-		font-size:1.8rem;
+	header h1{
+		font-size:4rem;
+	}
+	header h2{
+		font-size:3.5rem;
 	}
 	main h3{
 		font-size:3rem;
 	}
-	button{
-		font-size:2rem;
+	button, .descBtn, .directionBtn{
+		font-size:3rem;
 	}
+	.toolIngBtn{
+		font-size:2.8rem;
+	}
+	.generateMealButton{
+		font-size:3rem;
+	}
+	
 }
 /*--Devices:
 	Surface Duo--*/
@@ -290,8 +305,8 @@ button{
 	.explanation{
 		font-size:2.3rem;
 	}
-	.saveField, .saveButton{
-		font-size:2.5rem;
+	.saveField, button{
+		font-size:4rem;
 	}
 	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
 		font-size:2.5rem;
@@ -342,7 +357,7 @@ button{
 	.explanation{
 		font-size:2.3rem;
 	}
-	.saveField, .saveButton{
+	.saveField button{
 		font-size:4.5rem;
 	}
 	.step, .toolsList, .ingredientList, .dishDescription{
@@ -470,10 +485,13 @@ button{
 	main h3{
 		font-size:2.5rem;
 	}
+	.explanation h2{
+		font-size:3.5rem;
+	}
 	.explanation{
 		font-size:2rem;
 	}
-	.saveField, .saveButton{
+	.saveField, .saveField button{
 		font-size:2.5rem;
 	}
 	.step, .toolsList, .ingredientList, .dishDescription, .mealName{

@@ -27,7 +27,6 @@ footer a:first-child{
     text-align:center;
 }
 footer a{
-    padding-top:2%;
     justify-content: space-around;
     padding-right:0.8rem;
 }
@@ -50,7 +49,6 @@ footer div{
     display:block;
     padding-top:3%;
     padding-bottom:3%;
-    /* background-color:blue; */
 }
 
 /*---Portrait---*/
@@ -61,8 +59,9 @@ footer div{
         flex-direction:column;
     }
     header{
-        font-size:1.3rem;
+        font-size:3rem;
         font-weight:bold;
+        text-align:center;
     }
     section{
         border-bottom:none;
@@ -79,6 +78,10 @@ footer div{
         text-align:center;
         font-size:1.4rem;
     }
+    footer h2{
+        font-size:2.5rem;
+        text-align:center;
+    }
     .sectionDescription{
         font-size:2rem;
     }
@@ -94,8 +97,8 @@ footer div{
         flex-direction:column;
     }
     header{
-        font-size:1.5rem;
-        font-weight:bold;
+        font-size:3rem;
+        text-align:center;
     }
     section{
         border-bottom:none;
@@ -125,9 +128,9 @@ footer div{
     header, main, footer{
         flex-direction:column;
     }
-    header{
-        font-size:1.8rem;
-        font-weight:bold;
+    header h1{
+        font-size:3.5rem;
+        text-align:center;
     }
     h2{
         font-size:2rem;
@@ -145,10 +148,17 @@ footer div{
         border-bottom:2px solid black;
     }
     .sectionDescription{
-        font-size:1.4rem;
+        font-size:1.8rem;
     }
     .sectionFoot{
         font-size: 1.8rem;
+    }
+}
+/*--Devices:
+    Surface Duo--*/
+@media only screen and (orientation:portrait) and (min-width:540px) and (max-width:767px){
+    header h1{
+        font-size:3rem;
     }
 }
 /*--Devices:  
@@ -225,7 +235,7 @@ footer div{
         flex-direction:column;
     }
     header{
-        font-size: 2.5em;
+        font-size: 3rem;
         font-weight:bold;
     }
     h2{
@@ -292,10 +302,11 @@ footer div{
     header{
         font-size:3.5rem;
         margin:0.5rem 0;
+        
     }
     section{
         padding:0;
-        height:17rem;
+        height:20rem;
         font-size:1.3rem;
         
     }
@@ -305,7 +316,7 @@ footer div{
 
     }
     h2{
-        font-size:1.5rem;
+        font-size:2rem;
         font-weight:bold;
     }
     .sectionFoot{
@@ -322,14 +333,14 @@ footer div{
         padding:0 2%;
     }
     header{
-        font-size:2.3rem;
+        font-size:3.5rem;
         margin-top:0.5rem;
-        margin-bottom:0;
+        margin-bottom:1rem;
 
     }
     section{
         padding:0;
-        height:18rem;
+        height:21rem;
         font-size:1.5rem;
         padding-bottom:0.9rem;
         margin-bottom:0;
@@ -337,11 +348,13 @@ footer div{
     }
     footer{
         margin-top:0;
-        font-size:1.4rem;
-
+        font-size:1.8rem;
+    }
+    footer h2{
+        font-size:1.8rem;
     }
     h2{
-        font-size:1.5rem;
+        font-size:2rem;
         font-weight:bold;
     }
     .sectionFoot{
@@ -364,7 +377,7 @@ footer div{
     }
     section{
         padding:0;
-        height:25rem;
+        height:28rem;
         font-size:1.8rem;
         padding-bottom:0.9rem;
         margin-bottom:0;
@@ -374,12 +387,12 @@ footer div{
         margin-top:0;
         font-size:2rem;
     }
-    h2{
-        font-size:2rem;
-        font-weight:bold;
+    footer h2{
+        font-size:2.5rem;
     }
-    h2, footer div{
-        margin-top:1rem;
+    h2{
+        font-size:3rem;
+        font-weight:bold;
     }
     .sectionDescription{
         padding:0 0.5rem;
@@ -405,7 +418,7 @@ footer div{
     }
     section{
         padding:0;
-        height:30rem;
+        height:34rem;
         font-size:2rem;
         padding-bottom:0.9rem;
         margin-bottom:0;
@@ -416,11 +429,8 @@ footer div{
         font-size:2.5rem;
     }
     h2{
-        font-size:2.5rem;
+        font-size:3rem;
         font-weight:bold;
-    }
-    h2, footer div{
-        margin-top:1rem;
     }
     .sectionDescription{
         padding:0 0.5rem;
