@@ -27,8 +27,16 @@ p, a, .item, input{
 }
 
 body{
-    background-image:url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80");
-    background-size: cover;
+    background:url("https://images.unsplash.com/photo-1495195134817-aeb325a55b65?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80") no-repeat center center fixed;
+    -webkit-background-size:cover;
+    -mox-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    
+}
+header{
+    background-color:#d5d0d0c6;
+    border: 1px solid black;
 }
 section, .explanation, .saveField{
     background-color:#d5d0d0b6;
@@ -43,13 +51,13 @@ a{
 }
 footer{
     border:2px solid black;
-    background-color:#9d9d9dd6;
+    background-color:#9d9d9df7;
 }
-.sectionFoot{
+/* .sectionFoot{
     background-color:#d5d0d0db;
-}
+} */
 
-.generateMealButton, h3, .options, .saveField button, header button{
+.generateMealButton, h3, .options, .sectionFoot, .saveField button, header button{
     background-color:#27d032e2;
 }
 .recipeCard{
