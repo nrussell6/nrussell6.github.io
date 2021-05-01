@@ -8,6 +8,9 @@ header h1{
 	padding:1rem 0;
 
 }
+header{
+	margin-left:1rem;
+}
 
 body main{
 	padding:1.5rem;
@@ -39,6 +42,10 @@ button{
 }
 .explanation p{
 	margin:0 1rem;
+}
+.explanation h2{
+	border-top-left-radius:2.9rem;
+	border-top-right-radius:2.9rem;
 }
 .saveField{
 	padding-bottom:1rem;
@@ -93,13 +100,13 @@ button{
 	Galaxy Fold--*/
 @media only screen and (orientation:portrait) and (min-width:280px) and (max-width:319px){
 	header h1{
+		font-size:3.2rem;
+	}
+	.explanation h2, .saveField h2, .saveField button, .generateMealButton{
 		font-size:2rem;
 	}
-	button{
-		font-size:1.4rem;
-	}
 	section img{
-		width:15rem;
+		width:13rem;
 	}
 	body main{
 		margin:0;
@@ -107,7 +114,7 @@ button{
 		padding:0;
 	}
 	main h3{
-		font-size:1.8rem;
+		font-size:2.5rem;
 	}
 	.explanation{
 		font-size:1.8rem;
@@ -133,6 +140,9 @@ button{
 	}
 	.recipeDetails{
 		margin:0 0.5rem;
+	}
+	.descBtn, .directionBtn{
+		font-size:1.5rem;
 	}
 	.saveField button:nth-of-type(1){
 		margin-bottom:1rem;
@@ -240,7 +250,7 @@ button{
 	}
 }
 /*--Devices:
-	iPhoneX, Surface Duo--*/
+	iPhone 6/7/8, iPhoneX, Pixel, Surface Duo--*/
 @media only screen and (orientation:portrait) and (min-width:375px) and (max-width:767px){
 	body main{
 		padding:0;
@@ -249,27 +259,39 @@ button{
 		font-size:4rem;
 	}
 	header h2{
-		font-size:3.5rem;
+		font-size:2.5rem;
 	}
 	main h3{
 		font-size:3rem;
 	}
-	button, .descBtn, .directionBtn{
-		font-size:3rem;
+	button, .descBtn, .directionBtn, .toolIngBtn{
+		font-size:2rem;
 	}
 	.toolIngBtn{
-		font-size:2.8rem;
+		font-size:1.8rem;
 	}
 	.generateMealButton{
-		font-size:3rem;
+		font-size:2rem;
 	}
 	
 }
 /*--Devices:
 	Surface Duo--*/
 @media only screen and (orientation:portrait) and (min-width:540px) and (max-width:767px){
-	button{
-		font-size:2.3rem;
+	.saveField button{
+		font-size:3.5rem;
+	}
+	.generateMealButton{
+		font-size:2.8rem;
+	}
+	.descBtn, .directionBtn{
+		font-size:3rem;
+	}
+	.toolIngBtn{
+		font-size:2.5rem;
+	}
+	.explanation p, .mealName, .dishDescription, .toolsList, .ingredientList, .step{
+		font-size:2.5rem;
 	}
 }
 /*--Devices:
@@ -279,13 +301,10 @@ button{
 		font-size:5rem;
 	}
 	header h2{
-		font-size:3rem;
+		font-size:4.5rem;
 	}
 	header p{
 		padding:1rem 0;
-	}
-	button{
-		font-size:2.5rem;
 	}
 	section img{
 		width:30rem;
@@ -294,7 +313,7 @@ button{
 		padding:0;
 	}
 	main h3{
-		font-size:3rem;
+		font-size:4rem;
 	}
 	main button{
 		font-size:2.9rem;
@@ -303,13 +322,16 @@ button{
 		padding:2rem 0;
 	}
 	.explanation{
-		font-size:2.3rem;
+		font-size:3rem;
 	}
 	.saveField, button{
+		font-size:3.5rem;
+	}
+	.descBtn, .toolIngBtn, .directionBtn{
 		font-size:4rem;
 	}
 	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
-		font-size:2.5rem;
+		font-size:3rem;
 		padding:1rem 0;
 	}
 	.recipeDetails, main{
@@ -326,7 +348,7 @@ button{
 	.generateMealButton{
 		width:100%;
 		font-weight:bold;
-		font-size:2.8rem;
+		font-size:3.5rem;
 	}
 }
 /*--Devices:
@@ -336,17 +358,17 @@ button{
 		font-size:7rem;
 	}
 	header h2{
-		font-size:5rem;
+		font-size:6rem;
 	}
-	header p{
+	.explanation p{
 		padding:1rem 0.5rem;
-		font-size:4rem;
+		font-size:4.5rem;
 	}
 	section img{
 		width:50rem;
 	}
 	main h3{
-		font-size:5rem;
+		font-size:6rem;
 	}
 	main button{
 		font-size:4.5rem;
@@ -358,13 +380,9 @@ button{
 		font-size:2.3rem;
 	}
 	.saveField button{
-		font-size:4.5rem;
+		font-size:6rem;
 	}
-	.step, .toolsList, .ingredientList, .dishDescription{
-		font-size:4rem;
-		padding:1rem 0.5rem;
-	}
-	.mealName{
+	.step, .toolsList, .ingredientList, .dishDescription, .mealName{
 		font-size:4.5rem;
 		padding:1rem 0.5rem;
 	}
@@ -382,7 +400,7 @@ button{
 	.generateMealButton{
 		width:100%;
 		font-weight:bold;
-		font-size:4.5rem;
+		font-size:5rem;
 		height:10rem;
 	}
 }
@@ -430,8 +448,8 @@ button{
 	.explanation p{
 		font-size:2.5rem;
 	}
-	.saveField, .saveButton{
-		font-size:1.8rem;
+	.saveField button{
+		font-size:3rem;
 	}
 	.saveField h2{
 		font-size:3rem;
@@ -543,7 +561,6 @@ button{
 	header h1{
 		width:100%;
 		font-size:4.5rem;
-		/* font-weight:bold; */
 	}
 	main h3{
 		font-size:3rem;
@@ -564,22 +581,17 @@ button{
 	.explanation{
 		flex:3;
 		margin: 0 2%;
-		font-size:2rem;
+		font-size:2.6rem;
 	}
 	.saveField{
 		flex:2;
 		height:100%;
 		border:1px solid black;
-		font-size:2rem;
+		font-size:2.5rem;
 	}
-	.saveOptions{
-		margin:0;
-		display:flex;
-		flex-direction: row;
-	}
-	.saveOptions button{
+	.saveField button{
 		width:100%;
-		font-size:1.5rem;
+		font-size:2rem;
 	}
 	.mealName{
 		width:80%;
@@ -595,7 +607,8 @@ button{
 		align-self:flex-end;
 	}
 	.options button{
-		font-size:2rem;
+		font-size:3rem;
+		padding-bottom:50px;
 	}
 	.dishType{
 		width:20%;

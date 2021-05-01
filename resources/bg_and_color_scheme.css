@@ -53,11 +53,10 @@ footer{
     border:2px solid black;
     background-color:#9d9d9df7;
 }
-/* .sectionFoot{
-    background-color:#d5d0d0db;
-} */
 
-.generateMealButton, h3, .options, .sectionFoot, .saveField button, header button{
+.generateMealButton, h3, .options, .sectionFoot, 
+.saveField button, header button, .recipeDetails button,
+.explanation h2{
     background-color:#27d032e2;
 }
 .recipeCard{
