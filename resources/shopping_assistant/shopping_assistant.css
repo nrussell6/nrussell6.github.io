@@ -29,12 +29,11 @@ h2{
     font-weight:bold;
     margin-bottom:0.3rem;
     text-align:center;
-    text-decoration:underline;
 }
 h3{
     font-size:3rem;
     text-align:center;
-    text-decoration:underline;
+    border: 1px solid black;
 }
 input{
     border: 1px solid black;
@@ -55,7 +54,7 @@ button{
 }
 #searchBar{
     height:2rem;
-    
+    text-align:center;
 }
 .item a {
     display: block;
@@ -75,22 +74,95 @@ button{
 }
 
 /*---Portrait Mode --*/
+/*--Devices:
+    Galaxy Fold--*/
+@media only screen and (orientation:portrait) and (min-width:1px) and (max-width:319px){
+    main {
+        flex-direction: column;
+    }
+    header{
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    header h1{
+        font-size:4rem;
+        margin-bottom:0.3rem;
+    }
+    header label{
+        font-size:3rem;
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+    header button{
+        width:100%;
+        font-size:2.8rem;
+        margin-top:1rem;
+    }
+    h2{
+        font-size:3rem;
+        padding:1rem;
+    }
+    h3{
+        padding:1rem;
+    }
+    input{
+        width:80%;
+        font-size:2.5rem;
+    }
+    .storeName{
+        margin-bottom:1rem;
+    }
+    .store{
+        padding:0.5rem 0.5rem;
+        font-size:1.5rem;
+    }
+    .store img{
+        width:3rem;
+    }
+    .store button{
+        font-size:1.5rem;
+    }
+    .productName{
+        margin-top:10000rem;
+    }
+    .productQuantity{
+        font-size:2rem;
+        width:2rem;
+        text-align:center;
+    }
+    .saveField{
+        text-align:center;
+        padding-top: 1rem;
+    }
+    .saveField button{
+        width:100%;
+    }
+    .saveField span{
+        font-size:2rem;
+        font-weight:bold;
+    }
+    #searchBar{
+        font-size:2rem;
+    }
+
+
+}
 /*--Devices: 
-    iPhone 5/SE, Galaxy Fold--*/
-@media only screen and (orientation:portrait) and (min-width:1px) and (max-width:359px) {
+    iPhone 5/SE--*/
+@media only screen and (orientation:portrait) and (min-width:320px) and (max-width:359px) {
     main {
         flex-direction: column;
         margin: 1rem 0.5rem;
     }
     img {
-        width: 30px;
-        height: 30px;
+        width: 3rem;
     }
     header {
         margin-top: 1rem;
+        padding-top: 1rem;
     }
     header h1 {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
@@ -101,11 +173,11 @@ button{
         display: block;
         width: 100%;
         margin-top: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     header label {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h2 {
         text-align: center;
@@ -117,14 +189,10 @@ button{
         margin-bottom: 1rem;
         padding-bottom: 1rem;
     }
-    #shoppingList {
-        border-top: none;
-    }
     #shoppingList h3 {
         align-items: center;
         font-weight: bold;
         margin-bottom: 1rem;
-        text-decoration: underline;
     }
     .item {
         margin-top: 0.8rem;
@@ -159,7 +227,6 @@ button{
     }
     .storeName {
         text-align: center;
-        text-decoration: underline black;
         font-size: 1.8rem;
         font-weight: bold;
     }
@@ -180,7 +247,6 @@ button{
     }
     .saveField span {
         font-weight: bolder;
-        border-bottom: 2px solid black;
     }
 }
 
@@ -189,17 +255,16 @@ button{
 @media only screen and (orientation:portrait) and (min-width:360px) and (max-width:767px) {
     main {
         flex-direction: column;
-        margin: 1rem 0.5rem;
     }
     img {
-        width: 30px;
-        height: 30px;
+        width: 5rem;
     }
     header {
         margin-top: 1rem;
+        padding-top:1rem;
     }
     header h1 {
-        font-size: 1.7rem;
+        font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 0.5rem;
     }
@@ -210,11 +275,11 @@ button{
         display: block;
         width: 100%;
         margin-top: 0.5rem;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     header label {
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     h2 {
         text-align: center;
@@ -226,14 +291,10 @@ button{
         margin-bottom: 1rem;
         padding-bottom: 1rem;
     }
-    #shoppingList {
-        border-top: none;
-    }
     #shoppingList h3 {
         align-items: center;
         font-weight: bold;
         margin-bottom: 1rem;
-        text-decoration: underline;
     }
     .item {
         margin-top: 0.8rem;
@@ -267,8 +328,7 @@ button{
     }
     .storeName {
         text-align: center;
-        text-decoration: underline black;
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         font-weight: bold;
     }
     .store {
@@ -282,13 +342,12 @@ button{
     .saveField button {
         width: 100%;
         height: 100%;
-        font-size: 2rem;
+        font-size: 2.5rem;
         background: none;
         margin-top: 0.5rem;
     }
     .saveField span {
         font-weight: bolder;
-        border-bottom: 2px solid black;
     }
 }
 
@@ -300,16 +359,16 @@ button{
         margin: 1rem 0.5rem;
     }
     img {
-        width: 180px;
-        height: 180px;
+        width: 7rem;
     }
     header {
         margin-top: 1rem;
+        padding-top:2rem;
     }
     header h1 {
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: bold;
-        margin-bottom: 0.5rem;
+        padding-bottom:0.5rem;
     }
     header label {
         font-weight: bold;
@@ -326,11 +385,11 @@ button{
         display: block;
         width: 100%;
         margin-top: 1rem;
-        font-size: 3.8rem;
+        font-size: 5rem;
     }
     h2 {
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 4.5rem;
         font-weight: bold;
         margin: 1rem 0;
     }
@@ -338,14 +397,10 @@ button{
         margin-bottom: 1rem;
         padding-bottom: 1rem;
     }
-    #shoppingList {
-        border-top: none;
-    }
     #shoppingList h3 {
         align-items: center;
         font-weight: bold;
         margin-bottom: 1rem;
-        text-decoration: underline;
     }
     #searchBar{
         height:5rem;
@@ -383,8 +438,7 @@ button{
     }
     .storeName {
         text-align: center;
-        text-decoration: underline black;
-        font-size: 3.3rem;
+        font-size: 4.8rem;
         font-weight: bold;
     }
     .store {
@@ -396,15 +450,42 @@ button{
     .saveField span, .saveField button {
         width: 100%;
         height: 100%;
-        font-size: 3.5rem;
+        font-size: 4rem;
         background: none;
         margin-top: 0.5rem;
     }
     .saveField span {
         font-weight: bolder;
-        border-bottom: 2px solid black;
     }
     
+}
+
+/*--Devices:
+    iPad Pro--*/
+@media only screen and (orientation:portrait) and (min-width:1024px){
+    header h1{
+        font-size:7.5rem;
+    }
+    header label, header button, h2{
+        font-size:6rem;
+    }
+    img{
+        width:10rem;
+    }
+    .storeName{
+        font-size:8rem;
+    }
+    .item{
+        font-size:5rem;
+    }
+    .productQuantity, .item button{
+        width:5rem;
+        height:5rem;
+        font-size:4.5rem;
+    }
+    .saveField span, .saveField button{
+        font-size:6.5rem;
+    }
 }
 
 /*---Landscape Mode --*/
@@ -421,23 +502,20 @@ button{
     }
     header {
         margin-top: 1rem;
+        padding-top:0.5rem;
     }
     header h1 {
-        font-size: 1.7rem;
+        font-size: 3rem;
         font-weight: bold;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
     }
-    header input {
-        font-size: 1.5rem;
+    header input, header label{
+        font-size: 2rem;
     }
     header button {
         display: block;
         width: 100%;
         margin-top: 0.5rem;
-        font-size: 1.5rem;
-    }
-    header label {
-        font-weight: bold;
         font-size: 1.5rem;
     }
     h2 {
@@ -450,14 +528,10 @@ button{
         margin-bottom: 1rem;
         padding-bottom: 1rem;
     }
-    #shoppingList {
-        border-top: none;
-    }
     #shoppingList h3 {
         align-items: center;
         font-weight: bold;
         margin-bottom: 1rem;
-        text-decoration: underline;
     }
     .item {
         margin-top: 0.8rem;
@@ -492,7 +566,6 @@ button{
     }
     .storeName {
         text-align: center;
-        text-decoration: underline black;
         font-size: 1.8rem;
         font-weight: bold;
     }
@@ -513,7 +586,6 @@ button{
     }
     .saveField span {
         font-weight: bolder;
-        border-bottom: 2px solid black;
     }
 }
 
@@ -535,27 +607,27 @@ button{
     }
     header{
         margin-bottom: 1rem;
+        padding:1rem 0;
     }
     header h1{
         font-size:3rem;
+        margin-bottom:1rem;
     }
     header form{
         font-size:2.5rem;
     }
     #searchBar, header button{
-        font-size:1rem;
+        font-size:1.5rem;
     }
     h2{
         font-size:2rem;
         font-weight:bold;
         margin-bottom:0.3rem;
         text-align:center;
-        text-decoration:underline;
     }
     h3{
         font-size:1.5rem;
         text-align:center;
-        text-decoration:underline;
     }
     .item{
         font-size:1.3rem;
@@ -573,11 +645,13 @@ button{
     }
     .saveField span{
         text-align: center;
-        font-size:1.5rem;
+        font-size:1.2rem;
+        font-weight:bold;
     }
     .saveField button{
         width:50%;
         background:none;
+        font-size:1.2rem;
     }
     .productQuantity {
         width: 1.3rem;
@@ -616,12 +690,14 @@ button{
     }
     header{
         margin:1rem 0;
+        padding-top:1rem;
     }
     header h1{
         font-size:6rem;
     }
     header form{
-        font-size:5rem;
+        font-size:4rem;
+        padding-bottom:1rem;
     }
     header button{
         padding:0.5rem;
@@ -642,12 +718,10 @@ button{
         font-weight:bold;
         margin-bottom:0.3rem;
         text-align:center;
-        text-decoration:underline;
     }
     h3{
         font-size:2.5rem;
         text-align:center;
-        text-decoration:underline;
     }
     .item{
         font-size:2rem;
