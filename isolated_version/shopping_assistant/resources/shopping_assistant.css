@@ -1,0 +1,767 @@
+main {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width:100px;
+}
+
+header {
+    text-align: center;
+    margin:1rem 0;
+}
+
+header button {
+    background: none;
+    padding:0.5rem;
+    border: 1px solid black;
+    font-size:1.1rem;
+}
+
+header h1{
+    font-size:5rem;
+    margin-bottom:2rem;
+}
+h2{
+    font-size:3.5rem;
+    font-weight:bold;
+    margin-bottom:0.3rem;
+    text-align:center;
+}
+h3{
+    font-size:3rem;
+    text-align:center;
+    border: 1px solid black;
+}
+input{
+    border: 1px solid black;
+}
+button{
+    border:1px solid black;
+}
+#storeSearch {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+#shoppingList {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+#searchBar{
+    height:2rem;
+    text-align:center;
+}
+.item a {
+    display: block;
+    text-align: center;
+}
+.saveField button{
+    width:50%;
+    font-size:2rem;
+    background:none;
+}
+
+.productDetails {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+/*---Portrait Mode --*/
+/*--Devices:
+    Galaxy Fold--*/
+@media only screen and (orientation:portrait) and (min-width:1px) and (max-width:319px){
+    main {
+        flex-direction: column;
+    }
+    header{
+        padding-top:1rem;
+        padding-bottom:1rem;
+    }
+    header h1{
+        font-size:4rem;
+        margin-bottom:0.3rem;
+    }
+    header label{
+        font-size:3rem;
+        margin-top:1rem;
+        margin-bottom:1rem;
+    }
+    header button{
+        width:100%;
+        font-size:2.8rem;
+        margin-top:1rem;
+    }
+    h2{
+        font-size:3rem;
+        padding:1rem;
+    }
+    h3{
+        padding:1rem;
+    }
+    input{
+        width:80%;
+        font-size:2.5rem;
+    }
+    .storeName{
+        margin-bottom:1rem;
+    }
+    .store{
+        padding:0.5rem 0.5rem;
+        font-size:1.5rem;
+    }
+    .store img{
+        width:3rem;
+    }
+    .store button{
+        font-size:1.5rem;
+    }
+    .productName{
+        margin-top:10000rem;
+    }
+    .productQuantity{
+        font-size:2rem;
+        width:2rem;
+        text-align:center;
+    }
+    .saveField{
+        text-align:center;
+        padding-top: 1rem;
+    }
+    .saveField button{
+        width:100%;
+    }
+    .saveField span{
+        font-size:2rem;
+        font-weight:bold;
+    }
+    #searchBar{
+        font-size:2rem;
+    }
+
+
+}
+/*--Devices: 
+    iPhone 5/SE--*/
+@media only screen and (orientation:portrait) and (min-width:320px) and (max-width:359px) {
+    main {
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+    img {
+        width: 3rem;
+    }
+    header {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    header input {
+        font-size: 1.5rem;
+    }
+    header button {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+        font-size: 2rem;
+    }
+    header label {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.1rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+    section:nth-of-type(2) {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    #shoppingList h3 {
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .item {
+        margin-top: 0.8rem;
+        margin-left: 5%;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    .item:last-child {
+        border-bottom: none;
+    }
+    .item a {
+        display: block;
+        text-align: center;
+    }
+    .item button {
+        font-size: 1.5rem;
+    }
+    .productQuantity {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .productName {
+        display: block;
+    }
+    .productDetails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .storeName {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .store {
+        margin: 0.8rem 0;
+    }
+    .saveField,
+    #shoppingList h3 {
+        text-align: center;
+    }
+    .saveField span,
+    .saveField button {
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        background: none;
+        margin-top: 0.5rem;
+    }
+    .saveField span {
+        font-weight: bolder;
+    }
+}
+
+/*--Devices: 
+    Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, Surface Duo--*/
+@media only screen and (orientation:portrait) and (min-width:360px) and (max-width:767px) {
+    main {
+        flex-direction: column;
+    }
+    img {
+        width: 5rem;
+    }
+    header {
+        margin-top: 1rem;
+        padding-top:1rem;
+    }
+    header h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    header input {
+        font-size: 1.5rem;
+    }
+    header button {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+        font-size: 3rem;
+    }
+    header label {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+    section:nth-of-type(2) {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    #shoppingList h3 {
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .item {
+        margin-top: 0.8rem;
+        margin-left: 5%;
+        font-size: 1.5rem;
+    }
+    .item:last-child {
+        border-bottom: none;
+    }
+    .item a {
+        display: block;
+        text-align: center;
+    }
+    .item button {
+        font-size: 1.5rem;
+    }
+    .productQuantity {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .productName {
+        display: block;
+    }
+    .productDetails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .storeName {
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .store {
+        margin: 0.8rem 0;
+    }
+    .saveField,
+    #shoppingList h3 {
+        text-align: center;
+    }
+    .saveField span,
+    .saveField button {
+        width: 100%;
+        height: 100%;
+        font-size: 2.5rem;
+        background: none;
+        margin-top: 0.5rem;
+    }
+    .saveField span {
+        font-weight: bolder;
+    }
+}
+
+/*--Devices:
+    iPad, iPad Pro--*/
+@media only screen and (orientation:portrait) and (min-width:768px) and (max-width:1024px) {
+    main {
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+    img {
+        width: 7rem;
+    }
+    header {
+        margin-top: 1rem;
+        padding-top:2rem;
+    }
+    header h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        padding-bottom:0.5rem;
+    }
+    header label {
+        font-weight: bold;
+        font-size: 3.5rem;
+    }
+    header input {
+        font-size: 3.5rem;
+        border: 1px solid black;
+        padding-left:1rem;
+        margin-left:1rem;
+        width:50%;
+    }
+    header button {
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+        font-size: 5rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 4.5rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+    section:nth-of-type(2) {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    #shoppingList h3 {
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    #searchBar{
+        height:5rem;
+    }
+    .item {
+        margin-top: 0.8rem;
+        margin-left: 5%;
+        font-size: 3rem;
+    }
+    .item:last-child {
+        border-bottom: none;
+    }
+    .item a {
+        display: block;
+        text-align: center;
+    }
+    .item button {
+        font-size: 3rem;
+    }
+    .productQuantity {
+        width: 3rem;
+        height: 3rem;
+        font-size: 3rem;
+        text-align: center;
+        border:solid 1px black;
+    }
+    .productName {
+        display: block;
+    }
+    .productDetails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .storeName {
+        text-align: center;
+        font-size: 4.8rem;
+        font-weight: bold;
+    }
+    .store {
+        margin: 0.8rem 0;
+    }
+    .saveField, #shoppingList h3 {
+        text-align: center;
+    }
+    .saveField span, .saveField button {
+        width: 100%;
+        height: 100%;
+        font-size: 4rem;
+        background: none;
+        margin-top: 0.5rem;
+    }
+    .saveField span {
+        font-weight: bolder;
+    }
+    
+}
+
+/*--Devices:
+    iPad Pro--*/
+@media only screen and (orientation:portrait) and (min-width:1024px){
+    header h1{
+        font-size:7.5rem;
+    }
+    header label, header button, h2{
+        font-size:6rem;
+    }
+    img{
+        width:10rem;
+    }
+    .storeName{
+        font-size:8rem;
+    }
+    .item{
+        font-size:5rem;
+    }
+    .productQuantity, .item button{
+        width:5rem;
+        height:5rem;
+        font-size:4.5rem;
+    }
+    .saveField span, .saveField button{
+        font-size:6.5rem;
+    }
+}
+
+/*---Landscape Mode --*/
+/*--Devices: 
+    iPhone 5/SE-*/
+@media only screen and (orientation:landscape) and (min-width:1px) and (max-width:639px) {
+    main {
+        flex-direction: column;
+        margin: 1rem 0.5rem;
+    }
+    img {
+        width: 30px;
+        height: 30px;
+    }
+    header {
+        margin-top: 1rem;
+        padding-top:0.5rem;
+    }
+    header h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    header input, header label{
+        font-size: 2rem;
+    }
+    header button {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+    h2 {
+        text-align: center;
+        font-size: 2.1rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+    section:nth-of-type(2) {
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+    #shoppingList h3 {
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .item {
+        margin-top: 0.8rem;
+        margin-left: 5%;
+        font-size: 1.5rem;
+        justify-content: center;
+    }
+    .item:last-child {
+        border-bottom: none;
+    }
+    .item a {
+        display: block;
+        text-align: center;
+    }
+    .item button {
+        font-size: 1.5rem;
+    }
+    .productQuantity {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .productName {
+        display: block;
+    }
+    .productDetails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .storeName {
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .store {
+        margin: 0.8rem 0;
+    }
+    .saveField,
+    #shoppingList h3 {
+        text-align: center;
+    }
+    .saveField span,
+    .saveField button {
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        background: none;
+        margin-top: 0.5rem;
+    }
+    .saveField span {
+        font-weight: bolder;
+    }
+}
+
+/*--Devices: 
+    Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, iPhone 6/7/8, iPhone 6/7/8 Plus, iPhone X, Surface Duo--*/
+@media only screen and (orientation:landscape) and (min-width:640px) and (max-width:1023px){
+    main{
+        display:flex;
+        flex-direction:row;
+        margin:0 0.5rem;
+    }
+    section{
+        width:100%;
+        padding:0.5rem;
+        margin-bottom:1rem;
+    }
+    img{
+        width:2.5rem;
+    }
+    header{
+        margin-bottom: 1rem;
+        padding:1rem 0;
+    }
+    header h1{
+        font-size:3rem;
+        margin-bottom:1rem;
+    }
+    header form{
+        font-size:2.5rem;
+    }
+    #searchBar, header button{
+        font-size:1.5rem;
+    }
+    h2{
+        font-size:2rem;
+        font-weight:bold;
+        margin-bottom:0.3rem;
+        text-align:center;
+    }
+    h3{
+        font-size:1.5rem;
+        text-align:center;
+    }
+    .item{
+        font-size:1.3rem;
+        align-content:space-around;
+        margin-bottom:0.5rem;
+    }
+    .item a {
+        display: block;
+        text-align: center;
+    }
+    .saveField{
+        display:flex;
+        flex-direction:row;
+        margin:1rem 0;
+    }
+    .saveField span{
+        text-align: center;
+        font-size:1.2rem;
+        font-weight:bold;
+    }
+    .saveField button{
+        width:50%;
+        background:none;
+        font-size:1.2rem;
+    }
+    .productQuantity {
+        width: 1.3rem;
+        height: 1.3rem;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-right:0.5rem;
+    }
+
+    .productDetails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .item span button{
+        font-size:1.2rem;
+    }
+    
+}
+
+/*--Devices:
+    iPad, iPad Pro--*/
+@media only screen and (orientation:landscape) and (min-width:1024px){
+    main{
+        display:flex;
+        flex-direction:row;
+    }
+    section{
+        width:100%;
+        padding:0.5rem;
+        margin-bottom:3rem;
+    }
+    img{
+        width:5rem;
+    }
+    header{
+        margin:1rem 0;
+        padding-top:1rem;
+    }
+    header h1{
+        font-size:6rem;
+    }
+    header form{
+        font-size:4rem;
+        padding-bottom:1rem;
+    }
+    header button{
+        padding:0.5rem;
+        font-size:2.5rem;
+        border: 1px solid black;
+    }
+    #searchBar{
+        width:30rem;
+        height:4.5rem;
+        padding-left:1rem;
+    }
+    #searchBar, header button{
+        font-size:3rem;
+    }
+    
+    h2{
+        font-size:3rem;
+        font-weight:bold;
+        margin-bottom:0.3rem;
+        text-align:center;
+    }
+    h3{
+        font-size:2.5rem;
+        text-align:center;
+    }
+    .item{
+        font-size:2rem;
+        align-content:space-around;
+        margin-bottom:0.5rem;
+    }
+    .item a {
+        display: block;
+        text-align: center;
+    }
+    .saveField{
+        display:flex;
+        flex-direction:row;
+        margin:1rem 0;
+    }
+    .saveField span{
+        text-align: center;
+        font-size:2rem;
+    }
+    .saveField button{
+        width:50%;
+        font-size:2rem;
+        background:none;
+    }
+    .productQuantity {
+        width: 3rem;
+        height: 3rem;
+        font-size: 2.8rem;
+        text-align: center;
+        margin-right:1rem;
+    }
+
+    .productDetails {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0.5rem 0;
+    }
+    .item span button{
+        font-size:2.5rem;
+        width:4rem;
+    }
+}
